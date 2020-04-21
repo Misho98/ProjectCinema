@@ -41,6 +41,7 @@
             this.ccc3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.labelTotal = new System.Windows.Forms.Label();
+            this.Exit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridScreenings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridSClients)).BeginInit();
             this.SuspendLayout();
@@ -168,11 +169,22 @@
             this.labelTotal.Size = new System.Drawing.Size(0, 13);
             this.labelTotal.TabIndex = 12;
             // 
+            // Exit
+            // 
+            this.Exit.Location = new System.Drawing.Point(250, 393);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(75, 23);
+            this.Exit.TabIndex = 13;
+            this.Exit.Text = "Close";
+            this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
             // Screening
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(562, 428);
+            this.Controls.Add(this.Exit);
             this.Controls.Add(this.labelTotal);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridSClients);
@@ -202,5 +214,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ccc1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ccc2;
         private System.Windows.Forms.DataGridViewTextBoxColumn ccc3;
+        private System.Windows.Forms.Button Exit;
     }
 }

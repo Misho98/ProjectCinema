@@ -175,6 +175,7 @@
             this.infoWatched.TabIndex = 2;
             this.infoWatched.Text = "Most Watched";
             this.infoWatched.UseVisualStyleBackColor = true;
+            this.infoWatched.Click += new System.EventHandler(this.infoWatched_Click);
             // 
             // MainMenu
             // 

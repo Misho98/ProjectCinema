@@ -59,5 +59,11 @@ namespace ProjectCinema
             Screening scr = new Screening(curCinemaID);
             scr.ShowDialog();
         }
+
+        private void infoWatched_Click(object sender, EventArgs e)
+        {
+            MostViewed mv = new MostViewed();
+            mv.ShowDialog();
+        }
     }
 }
