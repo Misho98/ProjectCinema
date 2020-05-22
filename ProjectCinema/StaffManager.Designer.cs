@@ -36,7 +36,8 @@
             this.Ephone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Eemail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Eid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
+            this.RemoveEmp = new System.Windows.Forms.Button();
+            this.AddEmp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridEmployees)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,12 +52,13 @@
             // 
             // Exit
             // 
-            this.Exit.Location = new System.Drawing.Point(491, 363);
+            this.Exit.Location = new System.Drawing.Point(279, 207);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(75, 23);
             this.Exit.TabIndex = 15;
             this.Exit.Text = "Close";
             this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // dataGridEmployees
             // 
@@ -116,21 +118,33 @@
             this.Eid.ReadOnly = true;
             this.Eid.Visible = false;
             // 
-            // button1
+            // RemoveEmp
             // 
-            this.button1.Location = new System.Drawing.Point(437, 183);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 23);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Remove Selected Employee";
-            this.button1.UseVisualStyleBackColor = true;
+            this.RemoveEmp.Location = new System.Drawing.Point(437, 183);
+            this.RemoveEmp.Name = "RemoveEmp";
+            this.RemoveEmp.Size = new System.Drawing.Size(165, 23);
+            this.RemoveEmp.TabIndex = 16;
+            this.RemoveEmp.Text = "Remove Selected Employee";
+            this.RemoveEmp.UseVisualStyleBackColor = true;
+            this.RemoveEmp.Click += new System.EventHandler(this.RemoveEmp_Click);
+            // 
+            // AddEmp
+            // 
+            this.AddEmp.Location = new System.Drawing.Point(15, 183);
+            this.AddEmp.Name = "AddEmp";
+            this.AddEmp.Size = new System.Drawing.Size(165, 23);
+            this.AddEmp.TabIndex = 17;
+            this.AddEmp.Text = "Add New Employee";
+            this.AddEmp.UseVisualStyleBackColor = true;
+            this.AddEmp.Click += new System.EventHandler(this.AddEmp_Click);
             // 
             // StaffManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(614, 409);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(614, 241);
+            this.Controls.Add(this.AddEmp);
+            this.Controls.Add(this.RemoveEmp);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.dataGridEmployees);
             this.Controls.Add(this.label1);
@@ -153,6 +167,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Ephone;
         private System.Windows.Forms.DataGridViewTextBoxColumn Eemail;
         private System.Windows.Forms.DataGridViewTextBoxColumn Eid;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button RemoveEmp;
+        private System.Windows.Forms.Button AddEmp;
     }
 }
