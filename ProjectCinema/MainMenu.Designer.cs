@@ -39,10 +39,10 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.infoWatched = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.infoWatched = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -110,8 +110,9 @@
             // staffManagerToolStripMenuItem
             // 
             this.staffManagerToolStripMenuItem.Name = "staffManagerToolStripMenuItem";
-            this.staffManagerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.staffManagerToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.staffManagerToolStripMenuItem.Text = "Staff Manager";
+            this.staffManagerToolStripMenuItem.Click += new System.EventHandler(this.staffManagerToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -137,6 +138,16 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Information";
+            // 
+            // infoWatched
+            // 
+            this.infoWatched.Location = new System.Drawing.Point(205, 30);
+            this.infoWatched.Name = "infoWatched";
+            this.infoWatched.Size = new System.Drawing.Size(169, 23);
+            this.infoWatched.TabIndex = 2;
+            this.infoWatched.Text = "Most Watched";
+            this.infoWatched.UseVisualStyleBackColor = true;
+            this.infoWatched.Click += new System.EventHandler(this.infoWatched_Click);
             // 
             // pictureBox1
             // 
@@ -167,16 +178,6 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "ProjectCinema";
             // 
-            // infoWatched
-            // 
-            this.infoWatched.Location = new System.Drawing.Point(205, 30);
-            this.infoWatched.Name = "infoWatched";
-            this.infoWatched.Size = new System.Drawing.Size(169, 23);
-            this.infoWatched.TabIndex = 2;
-            this.infoWatched.Text = "Most Watched";
-            this.infoWatched.UseVisualStyleBackColor = true;
-            this.infoWatched.Click += new System.EventHandler(this.infoWatched_Click);
-            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -191,6 +192,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainMenu";
             this.Text = "ProjectCinema";
+            this.Load += new System.EventHandler(this.MainMenu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

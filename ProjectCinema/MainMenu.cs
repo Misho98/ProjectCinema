@@ -65,5 +65,21 @@ namespace ProjectCinema
             MostViewed mv = new MostViewed();
             mv.ShowDialog();
         }
+
+        private void staffManagerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (curCinemaID == "none")
+            {
+                MessageBox.Show("You haven't selected a cinema.");
+                return;
+            }
+            StaffManager sm = new StaffManager(curCinemaID);
+            sm.ShowDialog();
+        }
+
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
